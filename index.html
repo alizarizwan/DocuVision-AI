@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Document Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Document Analysis</h1>
+
+        <!-- File Upload Section -->
+        <input type="file" id="fileInput" accept="image/*">
+        <button onclick="uploadFile()">Upload Document</button>
+
+        <!-- Loading Animation -->
+        <div id="loading" class="hidden">Processing...</div>
+
+        <!-- Display Results -->
+        <div id="result">
+            <h2>Extracted Text:</h2>
+            <p id="extractedText">Waiting for upload...</p>
+
+            <h2>Predicted Category:</h2>
+            <p id="category">---</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
